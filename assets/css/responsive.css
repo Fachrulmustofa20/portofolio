@@ -1,0 +1,58 @@
+/*Layout untuk Tablet */
+@media all and (max-width: 1000px) { 
+    header{
+        padding: 15px 20px;
+    }
+    header.sticky{
+        padding: 5px 20px;
+    }
+    header ul li a{
+        margin: 0 15px;
+    }
+    .container-row{
+        margin: 0 50px;
+    }
+    .banner h1{
+        font-size: 21px;
+    }
+    .banner img{
+        width: 300px;
+    }
+    
+}
+/* Layout untuk Smartphone */
+@media all and (max-width: 670px) {
+    header.sticky{
+        padding: 15px 20px;
+    }
+    .banner img{
+        display: none;
+    }
+    .banner h1{
+        font-size: 30px;
+    }
+    .menu{
+        visibility: visible;
+        z-index: 100;
+    }
+    header ul{
+        position: absolute;
+        flex-direction: column;
+        background-color: #7619c2;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        margin: 0;
+        align-items: center;
+        justify-content: space-evenly;
+        z-index: -10;
+        width: 70%;
+        transform: translateX(100%);
+        transition: all 1s;
+    }
+
+    header ul.slide{
+        transform: translateX(0);
+    }
+    
+}
